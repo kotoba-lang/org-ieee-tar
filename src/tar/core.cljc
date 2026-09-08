@@ -22,7 +22,7 @@
    express (a name that will not split, a link target over 100 bytes, a size
    above 8 GiB). Output is reproducible: mtime, uid and gid default to 0 and
    nothing reads the clock or the environment."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [tar.bytes :as b]))
 
 (def block-size 512)
