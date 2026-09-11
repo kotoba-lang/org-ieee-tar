@@ -17,7 +17,7 @@ here needs a codec.
 - **Every failure is an `ex-info` with `:reason`.**
 - **Writes are reproducible**: mtime/uid/gid default to 0, uname/gname empty,
   and no clock or environment is read.
-- **Both runtimes are gated**: `clojure -M:test` and `nbb run-tests.cljs`.
+- **Both runtimes are gated**: `clojure -M:test` and `nbb run-tests.cljk`.
 
 ## Traps
 
@@ -59,7 +59,7 @@ than a dependency between two leaf spec repos.
 
 ## Test oracle
 
-`test/tar/oracle_test.clj` shells out to python3 (`tarfile` writes GNU, ustar and
+`test/tar/oracle_test.cljk` shells out to python3 (`tarfile` writes GNU, ustar and
 PAX on demand) and to the system `tar`. It **skips loudly** when python3 is
 missing rather than passing silently. Keep it that way: a conformance suite that
 quietly does nothing is worse than no suite.

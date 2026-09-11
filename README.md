@@ -69,7 +69,7 @@ decision), sparse files (GNU `S` entries), and the `V` volume-label entry.
 
 ```sh
 clojure -M:test          # JVM: portable suite + conformance against python3 tarfile and `tar`
-nbb run-tests.cljs       # ClojureScript: the same portable suite
+nbb run-tests.cljk       # ClojureScript: the same portable suite
 clojure -M:lint
 ```
 
