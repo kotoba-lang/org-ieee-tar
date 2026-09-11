@@ -17,7 +17,7 @@ here needs a codec.
 - **Every failure is an `ex-info` with `:reason`.**
 - **Writes are reproducible**: mtime/uid/gid default to 0, uname/gname empty,
   and no clock or environment is read.
-- **Both runtimes are gated**: `clojure -M:test` and `nbb run-tests.cljk`.
+- **Both runtimes are gated**: `kbb -M:test` and `kbb --backend sci run-tests.cljk`.
 
 ## Traps
 
