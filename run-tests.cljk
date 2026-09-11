@@ -1,5 +1,5 @@
 (ns run-tests
-  "Runs the runtime-agnostic suite on ClojureScript via nbb: `nbb run-tests.cljk`.
+  "Runs the runtime-agnostic suite on ClojureScript via nbb: `kbb --backend sci run-tests.cljk`.
 
    The JVM suite additionally checks conformance against python3's `tarfile` and
    the system `tar`; this one proves the same `.cljc` builds and reads archives on

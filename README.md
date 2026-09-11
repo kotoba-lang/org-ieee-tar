@@ -68,9 +68,9 @@ decision), sparse files (GNU `S` entries), and the `V` volume-label entry.
 ## Test
 
 ```sh
-clojure -M:test          # JVM: portable suite + conformance against python3 tarfile and `tar`
-nbb run-tests.cljk       # ClojureScript: the same portable suite
-clojure -M:lint
+kbb -M:test          # JVM: portable suite + conformance against python3 tarfile and `tar`
+kbb --backend sci run-tests.cljk       # ClojureScript: the same portable suite
+kbb -M:lint
 ```
 
 The JVM suite shells out to python3's `tarfile` — which writes GNU, ustar *and*
