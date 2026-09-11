@@ -1,7 +1,7 @@
 (ns tar.portable-test
   "Runtime-agnostic suite: builds and reads archives with no shell, no
    `java.util.zip`, no fixtures from another implementation. Runs under
-   `clojure -M:test` and `nbb run-tests.cljs`.
+   `clojure -M:test` and `nbb run-tests.cljk`.
 
    Conformance against real tars (GNU, ustar and PAX dialects, plus the system
    `tar`) lives in `tar.oracle-test`, which shells out to python3."
