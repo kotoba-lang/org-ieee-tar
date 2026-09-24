@@ -7,7 +7,7 @@
    `tar`) lives in `tar.oracle-test`, which shells out to python3."
   (:require [tar.bytes :as b]
             [tar.core :as tar]
-            #?(:clj  [clojure.test :refer [deftest is testing]]
+            #?(:clj  [kotoba.test :refer [deftest is testing]]
                :cljs [cljs.test :refer [deftest is testing]])))
 
 (defn- ->bytes [s] (b/str->utf8 s))
