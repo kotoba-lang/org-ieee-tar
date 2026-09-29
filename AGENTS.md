@@ -1,4 +1,4 @@
-# CLAUDE.md — org-ieee-tar
+# AGENTS.md — org-ieee-tar
 
 tar (POSIX.1 ustar + PAX + GNU extensions) in portable `.cljc`. Zero
 dependencies in `src/`, and it stays that way: tar does not compress, so nothing
